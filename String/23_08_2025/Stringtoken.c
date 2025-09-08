@@ -1,9 +1,10 @@
 #include<stdio.h>
 #include<string.h>
 int main(){
-    char str[40] = "shubham,22,7757949350";
+    char str[40] = "shubham,,22,7757949350";
+    char deli[100] = ":,";
     char *token;
-    token = strtok(str,",");
+    token = strtok(str,deli);
 
     while(token != NULL){
         printf("%s\n",token);

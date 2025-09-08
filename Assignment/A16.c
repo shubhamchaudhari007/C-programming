@@ -103,9 +103,9 @@ void print_sort(int *arr,int n){
     int s_smallest;
     for(int i=0;i<n-1;i++){
         s_smallest = largest1;              //assigning the second smallest to large element
-        for(int i=0;i<n;i++){
-            if(arr[i]>smallest1 && arr[i]<s_smallest){      //check condition to find the second smallest element
-                s_smallest = arr[i];
+        for(int j=0;j<n;j++){
+            if(arr[j]>smallest1 && arr[j]<s_smallest){      //check condition to find the second smallest element
+                s_smallest = arr[j];
             }
         }
         printf("%d ",s_smallest);
